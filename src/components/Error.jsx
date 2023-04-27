@@ -1,0 +1,12 @@
+import useSeguros from "../hooks/useSeguros";
+
+function Error() {
+    const {error} = useSeguros();
+    return (
+        <div className="border text-center border-red-400 bg-red-100 py-3 text-red-700">
+            <p>{error}</p>
+        </div>
+    );
+}
+
+export default Error;
